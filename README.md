@@ -12,7 +12,7 @@ A lightweight HTTP caching proxy service that sits between your application and 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/caching-proxy.git
+git clone https://github.com/andreast12/caching-proxy.git
 cd caching-proxy
 ```
 
