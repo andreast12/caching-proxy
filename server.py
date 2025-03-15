@@ -9,8 +9,8 @@ r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 def start_server(origin, port):
     app = Flask(__name__)
 
-    @app.route('/', defaults={'path': ''})
-    @app.route('/<path:path>')
+    @app.get('/', defaults={'path': ''})
+    @app.get('/<path:path>')
     def proxy(path):
         try:
             target = f"{origin}/{path}"
