@@ -71,3 +71,7 @@ For a complete list of available options:
 ```bash
 caching-proxy --help
 ```
+
+## Extras
+
+This repo serves as a solution to [roadmap.sh caching proxy project challenge](https://roadmap.sh/projects/caching-server).
