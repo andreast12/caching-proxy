@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=76", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caching-proxy"
+version = "0.1.0"
+description = "A caching proxy service"
+readme = "README.md"
+dependencies = [
+    "click",
+    "Flask",
+    "requests",
+    "redis"
+]
+
+[project.scripts]
+caching-proxy = "caching_proxy.main:cli"
+
+[tool.setuptools]
+packages = ["caching_proxy"]

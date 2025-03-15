@@ -1,5 +1,5 @@
 import click
-from server import start_server, clear_cache
+from .server import start_server, clear_cache
 
 @click.command()
 @click.version_option("0.1.0", prog_name="caching-proxy")
